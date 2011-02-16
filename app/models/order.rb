@@ -8,7 +8,7 @@ belongs_to :product
 			puts "Cliente Inexistente"
 			return false
 		else 
-			ordenota = orden.new
+			ordenota = order.new
 			ordenota.code=productCode
 			ordenota.client_id = Cliente.id
 			ordenota.date = Time.now
