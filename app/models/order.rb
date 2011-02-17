@@ -1,5 +1,6 @@
 class Order < ActiveRecord::Base
-belongs_to :product
+belongs_to :clients
+has_many :products
 
 	def boolean createOrder(clientNit, productCode)
 		Cliente = client.where(:nit => clientNit).first
